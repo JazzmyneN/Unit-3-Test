@@ -1,34 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+html {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
 form p{
     float: left;
     width: 50%;
 }
+#output {
+    height: 50px;
+}
 body{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
     vertical-align: middle;
+    
 }
 html{
-    background: radial-gradient( aqua, teal, black);
+    background: rgb(243, 243, 243);
     color: white;
     height: 100%;
     text-align: center;
 }
 input{
     background-color: rgb(233, 164, 16);
-    color: indigo;
-    border: 2px solid  indigo;
-    box-shadow: indigo 3px 3px 3px;
+    color: rgb(43, 43, 43);
+    border: 2px solid  rgb(43, 43, 43);
+
     
 }
-
+.awful {
+    text-decoration: line-through;
+}
 button{
-    background-color: rgb(219, 146, 50);
+    background: rgb(243, 243, 243);
     color:  (41, 23, 0);
-    border: 2px solid  black;
+    border: 1px solid  rgb(43, 43, 43);
     margin: 2px;
-    font-size: 15px;
-    box-shadow: indigo 3px 3px 3px;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 5px;
+    transition: all .5s;
+}
+button:hover {
+    color: rgb(255, 183, 74);
+    border: 1px solid  rgb(255, 183, 74);
+}
+button:focus, button:active {
+    color: rgb(243, 243, 243);
+    background-color: rgb(255, 183, 74);
+    outline: none;
+    border: 1px solid  rgb(255, 183, 74);
 }
 form, p{
-    color:rgb(236, 178, 71);
+    color:rgb(43, 43, 43);
     font-size: 20px;
-    text-shadow: black 2px 2px 2px;
+    font-weight: 300;
+}
+form {
+    font-weight: 400;
+}
+.fancy {
+    font-weight: 300;
+    
+}
+.number {
+    font-style: italic;
 }
